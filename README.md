@@ -1,9 +1,9 @@
 
 
-<h1 align="center">F-Tool - Powerful DDoS Script With 9 Methods</h1>
+<h1 align="center">F-Tool - Powerful DDoS Script With 10 Methods</h1>
 <em><h5 align="center">Programming Language - Python 3</h5></em>
 
-<p align="center">Please Don't Attack government websites.</p>
+<p align="center">Ilegal DDoS And Free :3.</p>
 
 # Features And Methods
 
@@ -21,26 +21,19 @@
 * HTTP1: TLS HTTP/1.1 GET flood
 * HTTP2: TLS HTTP/2 GET flood
 * CRINGE: Powerful Method Target Maybe die from Cringe
+* JTANG: HIGH Request 200k R/s For Non Protect && Medium Request 20k R/s Protect
 
 # Installation
 
 * Please use spoofed server for the best experience.
 
-* ```git clone https://github.com/ngdangtr/F-Tool```
+* ```https://github.com/TaliGanda/F-Tool```
 * ```cd F-Tool```
 * ```sh install.sh```
 
 * Install CentOS
 
 * ```cd F-Tool; sh installCentOS.sh```
-
-
-
-# Contact dev
-* Telegram: ```@ngdangtr```
-
-# Donation
-* Momo: ```0965849504```
 
 
 
