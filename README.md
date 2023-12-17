@@ -14,6 +14,7 @@
 * TCP: TCP junk flood
 * UDP:  UDP junk flood
 * HTTP: HTTP GET request flood
+* TCP-KILL : TARGET MAYBE DIE :V
 
 * Layer7
 
