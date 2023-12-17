@@ -47,7 +47,36 @@ class Home:
 		http_proxies = [
 			"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
 			"https://www.proxy-list.download/api/v1/get?type=http&anon=elite",
-			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous"]
+			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous","https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks4.txt",
+			"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt",
+			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt",
+			"https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS4.txt",
+			"https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt",
+			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt",
+			"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt",
+			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks5.txt",
+			"https://api.openproxylist.xyz/socks5.txt",
+			"https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5",
+			"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5",
+			"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5",
+			"https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all&simplified=true",
+			"https://proxyspace.pro/socks5.txt",
+			"https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
+			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
+			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies_anonymous/socks5.txt",
+			"https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt",
+			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt",
+			"https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
+			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
+			"https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+			"https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/socks.txt",
+			"http://worm.rip/socks5.txt",
+			"http://www.socks24.org/feeds/posts/default",
+			"https://www.freeproxychecker.com/result/socks5_proxies.txt",
+			"https://www.proxy-list.download/api/v1/get?type=socks5",
+			"https://www.proxyscan.io/download?type=socks5",
+			"https://www.my-proxy.com/free-socks-5-proxy.html",
+			"http://ab57.ru/downloads/proxyold.txt"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
@@ -69,7 +98,7 @@ class Home:
     {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}24/10/2022      {Color.LG}║
     {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v3  {Color.LG}║ {Color.LB}Simple but mighty XD {Color.LG}║
                         {Color.LG}╚══════════════════════╝
-    {Color.LR}[{Color.LG}>     Made with By NguyenDangTrinh    {Color.LG}<{Color.LR}]""")
+    {Color.LR}[{Color.LG}>     By TaliGanda + Add Methods/Proxy    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Proxy")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" WebTool")
