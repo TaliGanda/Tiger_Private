@@ -521,7 +521,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" TCP: TCP junk flood")
 		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" UDP:  UDP junk flood")
 		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" HTTP: HTTP GET request flood")
-		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" TCP-KILL: TCP FLOOD / HIGH R/s")
+		print(Color.LR+"["+Color.LG+"06"+Color.LR+"]"+Color.LC+" TCP-KILL: TCP FLOOD / HIGH R/s")
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
