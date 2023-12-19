@@ -1,6 +1,6 @@
 
 
-<h1 align="center">F-Tool - Powerful DDoS Script With 10 Methods</h1>
+<h1 align="center">F-Tool - Powerful DDoS Script With 11 Methods</h1>
 <em><h5 align="center">Programming Language - Python 3</h5></em>
 
 <p align="center">Ilegal DDoS And Free :3.</p>
@@ -23,6 +23,15 @@
 * HTTP2: TLS HTTP/2 GET flood
 * CRINGE: Powerful Method Target Maybe die from Cringe
 * JTANG: HIGH Request 200k R/s For Non Protect && Medium Request 20k R/s Protect
+* 
+* COMING SOON!!
+* New Methods, And Here Are The Names Of The Methods,
+* VOID @LostC2
+* HTTPFUKU @BlueSky
+* Killer @TronC2
+* HUMANERORR @F_****
+*
+* Thank you for the help,
 
 # Installation
 
