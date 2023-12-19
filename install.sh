@@ -1,4 +1,6 @@
 apt -y update; apt -y install screen git nodejs
+npm i path
+npm i events
 npm i fake-useragent
 npm i randomstring
 npm i request
