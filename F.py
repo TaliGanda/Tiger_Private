@@ -51,8 +51,16 @@ class Home:
 		        "https://www.proxy-list.download/api/v1/get?type=https",
 		        "https://www.proxy-list.download/api/v1/get?type=socks4",
 		        "https://www.proxy-list.download/api/v1/get?type=socks5",
-		        "https://www.proxy-list.download/api/v1/get?type=http&anon=transparent"]
-		with open(file_name, 'w'):
+		        "https://www.proxy-list.download/api/v1/get?type=http&anon=transparent",
+		        "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
+			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",]
+			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies_anonymous/socks5.txt",
+			"https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt",
+			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt",
+			"https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
+			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
+			"https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+			"https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/socks.txt"		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
 					with open(file_name, 'a') as p:
