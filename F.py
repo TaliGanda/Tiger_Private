@@ -45,11 +45,7 @@ class Home:
 		#self.styleText("\n [*] Downloading Proxy...\n")
 		file_name = "utils/http.txt"
 		http_proxies = [
-			"https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
-			"https://www.proxy-list.download/api/v1/get?type=http&anon=elite",
-			"https://www.proxy-list.download/api/v1/get?type=http&anon=anonymous",
-		        "https://www.proxy-list.download/api/v1/get?type=https",
-		        "https://www.proxy-list.download/api/v1/get?type=socks4",
+			"https://www.proxy-list.download/api/v1/get?type=socks4",
 		        "https://www.proxy-list.download/api/v1/get?type=socks5",
 		        "https://www.proxy-list.download/api/v1/get?type=http&anon=transparent",
 		        "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
@@ -61,7 +57,7 @@ class Home:
 			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
 			"https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
 			"https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/socks.txt"]
-               with open(file_name, 'w'):
+		  with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
 					with open(file_name, 'a') as p:
