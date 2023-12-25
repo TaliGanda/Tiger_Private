@@ -57,7 +57,7 @@ class Home:
 			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
 			"https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
 			"https://raw.githubusercontent.com/BlackSnowDot/proxylist-update-every-minute/main/socks.txt"]
-		  with open(file_name, 'w'):
+		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
 					with open(file_name, 'a') as p:
