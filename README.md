@@ -8,28 +8,20 @@
 # Features And Methods
 
 * Layer4
-
-* VSE: UDP Valve Source Engine specific flood
-* SYN: TCP SYN flood
-* TCP: TCP junk flood
-* UDP:  UDP junk flood
-* HTTP: HTTP GET request flood
-* TCP-KILL : TARGET MAYBE DIE :V
+* COMING SOON....
 
 * Layer7
-
-* SOCKET: Slow HTTP/1.1 socket flood
-* HTTP1: TLS HTTP/1.1 GET flood
-* HTTP2: TLS HTTP/2 GET flood
-* CRINGE: Powerful Method Target Maybe die from Cringe
-* JTANG: HIGH Request 200k R/s For Non Protect && Medium Request 20k R/s Protect
-* 
+* HUM4N3RR0R : FUCK YOU (Sonic Network)
+* VOID : Bypass + Protect Custom (IHP)
+* AIRSTRIKE : HIGH Request Maybe 800k/s
+  
 * COMING SOON!!
 * New Methods, And Here Are The Names Of The Methods,
-* VOID @LostC2
-* HTTPFUKU @BlueSky
-* Killer @TronC2
-* HUMANERORR @F_****
+* VOID @IHP (Done)
+* AIRSTRIKE @LostC2 (Done)
+* HTTPFUKU @BlueSky (Delete)
+* Killer @TronC2 (Delete)
+* HUMANERORR @F_**** (Done)
 *
 * Thank you for the help,
 
