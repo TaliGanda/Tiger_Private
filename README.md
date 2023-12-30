@@ -1,6 +1,6 @@
 
 
-<h1 align="center">F-Tool - Powerful DDoS Script With 11 Methods</h1>
+<h1 align="center">F-Tool - Powerful DDoS Script With 3 Methods</h1>
 <em><h5 align="center">Programming Language - Python 3</h5></em>
 
 <p align="center">Ilegal DDoS And Free :3.</p>
@@ -29,8 +29,8 @@
 
 * Please use spoofed server for the best experience.
 
-* ```https://github.com/TaliGanda/F-Tool```
-* ```cd F-Tool```
+* ```https://github.com/TaliGanda/Tiger_Private```
+* ```cd Tiger_Private```
 * ```sh install.sh```
 
 * Install CentOS
