@@ -39,6 +39,7 @@ npm i net
 npm i cloudscraper 
 npm i colors
 npm i http2
+npm i http
 npm i https
 npm i cluster
 npm i bottleneck
