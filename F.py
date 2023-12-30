@@ -66,9 +66,9 @@ class Home:
 	def home(self): # don't edit this banner lol
 		print(f"""
                         {Color.LG}╔══════════════════════╗
-    {Color.LC}╔═╗{Color.LB} ╔╦╗╔═╗╔═╗╦      {Color.LG}║ {Color.LR}Created: {Color.LY}1/8/2022      {Color.LG}║
-    {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}24/10/2022      {Color.LG}║
-    {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v3  {Color.LG}║ {Color.LB}Simple but mighty XD {Color.LG}║
+    {Color.LC}╔═╗{Color.LB} ╔╦╗╔═╗╔═╗╦      {Color.LG}║ {Color.LR}Created: {Color.LY}1/8/2015      {Color.LG}║
+    {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}12/1/2024      {Color.LG}║
+    {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v3  {Color.LG}║ {Color.LB}Simple but FUCK DPR!! {Color.LG}║
                         {Color.LG}╚══════════════════════╝
     {Color.LR}[{Color.LG}>     By TaliGanda Or Lex/LostC2    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
@@ -321,11 +321,11 @@ class Tool:
 	def webtools(self):
 		print(f"""{Color.LG}
 
-   __    __     _    _____            _
-  / / /\ \ \___| |__/__   \___   ___ | |
-  \ \/  \/ / _ \ '_ \ / /\/ _ \ / _ \| |
-   \  /\  /  __/ |_) / / | (_) | (_) | |
-    \/  \/ \___|_.__/\/   \___/ \___/|_|
+
+█████████████████████████████████████████████
+█▄─█▀▀▀█─▄█▄─▄▄─█▄─▄─▀█─▄─▄─█─▄▄─█─▄▄─█▄─▄███
+██─█─█─█─███─▄█▀██─▄─▀███─███─██─█─██─██─██▀█
+▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▄▀▄▄▄▄▀▀▀▄▄▄▀▀▄▄▄▄▀▄▄▄▄▀▄▄▄▄▄▀
 
 
 """)
@@ -402,12 +402,16 @@ class Tool:
 	def spdtest(self):
 		print(f"""{Color.LG}
 
-   __                     _ _____          _
-  / _\_ __   ___  ___  __| /__   \___  ___| |_
-  \ \| '_ \ / _ \/ _ \/ _` | / /\/ _ \/ __| __|
-  _\ \ |_) |  __/  __/ (_| |/ / |  __/\__ \ |_
-  \__/ .__/ \___|\___|\__,_|\/   \___||___/\__|
-     |_|
+
+
+███████████████████████████████
+█─▄▄▄▄█▄─▄▄─█▄─▄▄─█▄─▄▄─█▄─▄▄▀█
+█▄▄▄▄─██─▄▄▄██─▄█▀██─▄█▀██─██─█
+▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▄▀▄▄▄▄▀▀
+█████████████████████████
+█─▄─▄─█▄─▄▄─█─▄▄▄▄█─▄─▄─█
+███─████─▄█▀█▄▄▄▄─███─███
+▀▀▄▄▄▀▀▄▄▄▄▄▀▄▄▄▄▄▀▀▄▄▄▀▀
 
 
 """)
@@ -446,7 +450,15 @@ class Tool:
 			print(Color.LR+"Error: Check your Internet Connection.\n\n")
 
 
-	def bbos(self):
+	def methods(self):
+		print(f"""{Color.LG}
+
+██████████████████████████████████████████
+█▄─▀█▀─▄█▄─▄▄─█─▄─▄─█─█─█─▄▄─█▄─▄▄▀█─▄▄▄▄█
+██─█▄█─███─▄█▀███─███─▄─█─██─██─██─█▄▄▄▄─█
+▀▄▄▄▀▄▄▄▀▄▄▄▄▄▀▀▄▄▄▀▀▄▀▄▀▄▄▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀
+
+""")
 		print(Color.LR+"\n\n    [>    "+Color.LG+"Please use spoofed server for the best experience."+Color.LR+"    <]\n\n")
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Layer4")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" Layer7")
@@ -480,12 +492,11 @@ class Tool:
 
 	def l4(self):
 		print(f"""{Color.LG}
-     __                       _  _
-    / /  __ _ _   _  ___ _ __| || |
-   / /  / _` | | | |/ _ \ '__| || |_
-  / /__| (_| | |_| |  __/ |  |__   _|
-  \____/\__,_|\__, |\___|_|     |_|
-              |___/
+
+████████████████████████████████████
+█▄─▄████▀▄─██▄─█─▄█▄─▄▄─█▄─▄▄▀█░█░██
+██─██▀██─▀─███▄─▄███─▄█▀██─▄─▄█▄▄░██
+▀▄▄▄▄▄▀▄▄▀▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▀▄▄▄▀
 
 """)
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Zeus-Lord: Source Engine specific flood")
@@ -551,12 +562,11 @@ class Tool:
 
 	def l7(self):
 		print(f"""{Color.LG}
-     __                      _____
-    / /  __ _ _   _  ___ _ _|___  |
-   / /  / _` | | | |/ _ \ '__| / /
-  / /__| (_| | |_| |  __/ |   / /
-  \____/\__,_|\__, |\___|_|  /_/
-              |___/
+
+████████████████████████████████████
+█▄─▄████▀▄─██▄─█─▄█▄─▄▄─█▄─▄▄▀█▄▄▄░█
+██─██▀██─▀─███▄─▄███─▄█▀██─▄─▄███░██
+▀▄▄▄▄▄▀▄▄▀▄▄▀▀▄▄▄▀▀▄▄▄▄▄▀▄▄▀▄▄▀▀▄██▀
 
 """)
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" HUM4N 3RR0R: FUCK YOU (Sonic Network)")
@@ -614,7 +624,7 @@ class Tool:
 				print(f"{Color.LG} [!] Attack Stopped!")
 			elif option in ['00', '0']:
 				os.system('clear');self.bbos()
-			elif option in ['ddos', 'DDOS', 'bbos', 'BBOS']:
+			elif option in ['methods', 'METHODS', 'Methods', 'method']:
 				os.system('clear');Tool.bbos()
 			elif option == "":
 				pass
