@@ -723,3 +723,45 @@ if __name__ == '__main__':
 	Tool = Tool(commands, dev, spoof_useragents())
 	try:open('F-Tool.py');main()
 	except:quit()
+
+def login():
+    clear()
+    user = "Root_Tiger"
+    passwd = "Admin_User"
+    username = input("Username: ")
+    password = getpass.getpass(prompt='Password: ')
+    if username != user or password != passwd:
+        print("")
+        print("You Fail Bitch, Buy Username and Password.")
+        sys.exit(1)
+    elif username == user and password == passwd:
+        print (
+"""
+ _____                     _
+| ____|_  _____  ___ _   _| |_ ___  _ __
+|  _| \ \/ / _ \/ __| | | | __/ _ \| '__|
+| |___ >  <  __/ (__| |_| | || (_) | |
+|_____/_/\_\___|\___|\__,_|\__\___/|_|
+.      .      *           .       .          .                       .
+                 .       .   . *  "The Tiger will be black one day...
+  .       ____     .      . .      the day don't will exist more will be night"
+         <WW>>>         .        .               .
+ .   .  /WWWI; \  .       .    .  ____               .         .     .
+  *    /WWWWII; \=====;    .     /WI; \   *    .        /\_             .
+  .   /WWWWWII;..      \_  . ___/WI;:. \     .        _/M; \    .   .         .
+     /WWWWWIIIIi;..      \__/WWWIIII:.. \____ .   .  /MMI:  \   * .
+ . _/WWWWWIIIi;;;:...:   ;\WWWWWWIIIII;.     \     /MMWII;   \    .  .     .
+  /WWWWWIWIiii;;;.:.. :   ;\WWWWWIII;;;::     \___/MMWIIII;   \              .
+ /WWWWWIIIIiii;;::.... :   ;|WWWWWWII;;::.:      :;IMWIIIII;:   \___     *
+/WWWWWWWWWIIIIIWIIii;;::;..;\WWWWWWIII;;;:::...    ;IMIII;;     ::  \     .
+WWWWWWWWWIIIIIIIIIii;;::.;..;\WWWWWWWWIIIII;;..  :;IMIII;:::     :    \
+WWWWWWWWWWWWWIIIIIIii;;::..;..;\WWWWWWWWIIII;::; :::::::::.....::
+########################################################################XXXXXXX
+#####################################################################XXXXXXXXXX
+##################################################################XXXXXXXXXXXXX
+""")
+        print("Fuck You")
+        time.sleep(3.0)
+        main()
+
+login()
