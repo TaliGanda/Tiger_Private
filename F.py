@@ -27,10 +27,12 @@ except Exception as e:
 class Color:
 	colorama.init(autoreset=True)
 	LB = colorama.Fore.LIGHTBLUE_EX
+	LF = colorama.Fore.LIGHTBLACK_EX
 	LC = colorama.Fore.LIGHTCYAN_EX
 	LG = colorama.Fore.LIGHTGREEN_EX
 	LR = colorama.Fore.LIGHTRED_EX
 	LY = colorama.Fore.LIGHTYELLOW_EX
+	LW = colorama.Fore.LIGHTWHITE_EX
 	RESET = colorama.Fore.RESET
 
 
@@ -65,17 +67,18 @@ class Home:
 
 	def home(self): # don't edit this banner lol
 		print(f"""
-                        {Color.LG}╔══════════════════════╗
-    {Color.LC}╔═╗{Color.LB} ╔╦╗╔═╗╔═╗╦      {Color.LG}║ {Color.LR}Created: {Color.LY}1/8/2015      {Color.LG}║
-    {Color.LC}╠╣{Color.LB}{Color.LR}───{Color.LB}║ ║ ║║ ║║      {Color.LG}║ {Color.LR}Updated: {Color.LY}12/1/2024      {Color.LG}║
-    {Color.LC}╚{Color.LB}    ╩ ╚═╝╚═╝╩═╝{Color.LG}v3  {Color.LG}║ {Color.LB}Simple but FUCK DPR!! {Color.LG}║
-                        {Color.LG}╚══════════════════════╝
+{Color.LR}.------..------..------..------..------.{Color.LR}
+{Color.LR}|T.--.m||I.--.m||G.--.m||E.--.m||R.--.m|{Color.LR}    {Color.LG}╔══════════════════════╗{Color.LG}
+{Color.LR}|m:/\:m||m(\/)m||m:/\:m||m(\/)m||m:():m|{Color.LR}    {Color.LG}║Crate : 1/1/2015{Color.LG}
+{Color.LR}|m(__)m||m:\/:m||m:\/:m||m:\/:m||m()()m|{Color.LR}    {Color.LG}║Update : 1/1/2024{Color.LG}
+{Color.LR}|m'--'T||m'--'I||m'--'G||m'--'E||m'--'R|{Color.LR}    {Color.LG}║Fuck DPR!!{Color.LG}
+{Color.LR}`------'`------'`------'`------'`------' v1{Color.LR} {Color.LG}╚══════════════════════╝{Color.LG}
     {Color.LR}[{Color.LG}>     By TaliGanda Or Lex/LostC2    {Color.LG}<{Color.LR}]""")
 		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
-		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Proxy")
-		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" WebTool")
-		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" L4/L7/BBoS")
-		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" SpeedTest")
+		print(Color.LR+"["+Color.LW+"01"+Color.LR+"]"+Color.LC+" Proxy")
+		print(Color.LR+"["+Color.LW+"02"+Color.LR+"]"+Color.LC+" WebTool")
+		print(Color.LR+"["+Color.LW+"03"+Color.LR+"]"+Color.LC+" L4/L7/BBoS")
+		print(Color.LR+"["+Color.LW+"04"+Color.LR+"]"+Color.LC+" SpeedTest")
 		print("\n")
 		while True:
 			try:
@@ -261,7 +264,7 @@ class Tool:
 			os.system('clear')
 		except requests.exceptions.ConnectionError:
 			sys.exit(Color.LR+"\nError: Check your Internet Connection.")
-		print(f"""{Color.LG}
+		print(f"""{Color.LF}
 
 
 ██████╗░██████╗░░█████╗░██╗░░██╗██╗░░░██╗
@@ -273,10 +276,10 @@ class Tool:
 
 
 """)
-		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" HTTP PROXY")
-		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" HTTPS PROXY")
-		print(Color.LR+"["+Color.LG+"03"+Color.LR+"]"+Color.LC+" SOCKS4 PROXY")
-		print(Color.LR+"["+Color.LG+"04"+Color.LR+"]"+Color.LC+" SOCKS5 PROXY")
+		print(Color.LR+"["+Color.LW+"01"+Color.LR+"]"+Color.LC+" HTTP PROXY")
+		print(Color.LR+"["+Color.LW+"02"+Color.LR+"]"+Color.LC+" HTTPS PROXY")
+		print(Color.LR+"["+Color.LW+"03"+Color.LR+"]"+Color.LC+" SOCKS4 PROXY")
+		print(Color.LR+"["+Color.LW+"04"+Color.LR+"]"+Color.LC+" SOCKS5 PROXY")
 		print("\n")
 		while True:
 				sys.stdout.write(Color.LB+"╔═══"+Color.LR+"["+Color.LG+"F-Toolv3"+Color.LB+"@"+Color.LG+"Proxy"+Color.LR+"]"+Color.LB+"\n╚══> "+Color.RESET)
@@ -321,7 +324,7 @@ class Tool:
 					print(Color.LR+"command: "+Color.LG+f"{option}"+Color.LR+" not found")
 
 	def webtools(self):
-		print(f"""{Color.LG}
+		print(f"""{Color.LF}
 
 
 █████████████████████████████████████████████
@@ -402,7 +405,7 @@ class Tool:
 				print(Color.LR+"command: "+Color.LG+f"{option}"+Color.LR+" not found")
 
 	def spdtest(self):
-		print(f"""{Color.LG}
+		print(f"""{Color.LC}
 
 
 
@@ -452,8 +455,8 @@ class Tool:
 			print(Color.LR+"Error: Check your Internet Connection.\n\n")
 
 
-	def methods(self):
-		print(f"""{Color.LG}
+	def bbos(self):
+		print(f"""{Color.LR}
 
 ██████████████████████████████████████████
 █▄─▀█▀─▄█▄─▄▄─█─▄─▄─█─█─█─▄▄─█▄─▄▄▀█─▄▄▄▄█
@@ -493,7 +496,7 @@ class Tool:
 				print(Color.LR+"command: "+Color.LG+f"{option}"+Color.LR+" not found")
 
 	def l4(self):
-		print(f"""{Color.LG}
+		print(f"""{Color.LW}
 
 ████████████████████████████████████
 █▄─▄████▀▄─██▄─█─▄█▄─▄▄─█▄─▄▄▀█░█░██
@@ -563,7 +566,7 @@ class Tool:
 				print(Color.LR+"command: "+Color.LG+f"{option}"+Color.LR+" not found")
 
 	def l7(self):
-		print(f"""{Color.LG}
+		print(f"""{Color.LW}
 
 ████████████████████████████████████
 █▄─▄████▀▄─██▄─█─▄█▄─▄▄─█▄─▄▄▀█▄▄▄░█
