@@ -50,7 +50,11 @@ class Home:
 			"https://www.proxy-list.download/api/v1/get?type=socks4",
 		        "https://www.proxy-list.download/api/v1/get?type=socks5"
 		        "https://www.proxy-list.download/api/v1/get?type=http",
-		        "https://www.proxy-list.download/api/v1/get?type=https"]
+		        "https://www.proxy-list.download/api/v1/get?type=https",
+		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all",
+		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&timeout=10000&country=all",
+		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&timeout=10000&country=all",
+		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=https&timeout=10000&country=all"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
