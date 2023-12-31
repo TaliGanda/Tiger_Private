@@ -51,10 +51,11 @@ class Home:
 		        "https://www.proxy-list.download/api/v1/get?type=socks5"
 		        "https://www.proxy-list.download/api/v1/get?type=http",
 		        "https://www.proxy-list.download/api/v1/get?type=https",
-		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=http&timeout=10000&country=all",
-		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&timeout=10000&country=all",
-		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=socks4&timeout=10000&country=all",
-		        "https://api.proxyscrape.com/?request=displayproxies&proxytype=https&timeout=10000&country=all"]
+		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all",
+		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all",
+		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=10000&country=all&ssl=all&anonymity=all",
+		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=https&timeout=10000&country=all&ssl=all&anonymity=all",
+		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=all&timeout=10000&country=all&ssl=all&anonymity=all"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
