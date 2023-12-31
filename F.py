@@ -48,9 +48,7 @@ class Home:
 		file_name = "utils/http.txt"
 		http_proxies = [
 			"https://www.proxy-list.download/api/v1/get?type=socks4",
-		        "https://www.proxy-list.download/api/v1/get?type=socks5",
-		        "https://api.proxyscrape.com/v2/?request=getproxies&protocol=https",
-		        "https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt"]
+		        "https://www.proxy-list.download/api/v1/get?type=socks5"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
