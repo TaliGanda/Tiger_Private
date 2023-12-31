@@ -48,7 +48,9 @@ class Home:
 		file_name = "utils/http.txt"
 		http_proxies = [
 			"https://www.proxy-list.download/api/v1/get?type=socks4",
-		        "https://www.proxy-list.download/api/v1/get?type=socks5"]
+		        "https://www.proxy-list.download/api/v1/get?type=socks5"
+		        "https://www.proxy-list.download/api/v1/get?type=http",
+		        "https://www.proxy-list.download/api/v1/get?type=https"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
@@ -79,11 +81,11 @@ class Home:
  ⣠⠮⡷⠶⠿⠿⠭⠤⠤⣕⣲⣶⣶⠾⠋ 
 ⠊ ⠈              
 """)
-		print(Color.LC+"    Type "+Color.LB+"'HELP'"+Color.LC+" to see all commands\n\n")
-		print(Color.LR+"["+Color.LW+"01"+Color.LR+"]"+Color.LC+" Proxy")
-		print(Color.LR+"["+Color.LW+"02"+Color.LR+"]"+Color.LC+" WebTool")
-		print(Color.LR+"["+Color.LW+"03"+Color.LR+"]"+Color.LC+" L4/L7/BBoS")
-		print(Color.LR+"["+Color.LW+"04"+Color.LR+"]"+Color.LC+" SpeedTest")
+		print(Color.LF+"    Type "+Color.LB+"'HELP'"+Color.LF+" to see all commands\n\n")
+		print(Color.LR+"["+Color.LF+"01"+Color.LR+"]"+Color.LW+" Proxy")
+		print(Color.LR+"["+Color.LF+"02"+Color.LR+"]"+Color.LW+" WebTool")
+		print(Color.LR+"["+Color.LF+"03"+Color.LR+"]"+Color.LW+" L4/L7/BBoS")
+		print(Color.LR+"["+Color.LF+"04"+Color.LR+"]"+Color.LW+" SpeedTest")
 		print("\n")
 		while True:
 			try:
