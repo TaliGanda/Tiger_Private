@@ -44,4 +44,4 @@ npm i https
 npm i cluster
 npm i bottleneck
 pip3 install -r requirements.txt
-python3 F-enc.py
+python3 F2.py
