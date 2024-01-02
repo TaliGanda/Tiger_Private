@@ -34,8 +34,8 @@ var file = path.basename(fileName);
 
 try {
 
-    var proxies = fs.readFileSync('proxy.txt', 'utf-8').toString().replace(/\r/g, '').split('\n');
-	var UAs = fs.readFileSync('ua.txt', 'utf-8').replace(/\r/g, '').split('\n');
+    var proxies = fs.readFileSync('utils/http.txt', 'utf-8').toString().replace(/\r/g, '').split('\n');
+	var UAs = fs.readFileSync('utils/ua.txt', 'utf-8').replace(/\r/g, '').split('\n');
 
 } catch (err) {
 
