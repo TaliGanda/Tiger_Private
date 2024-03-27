@@ -1,18 +1,3 @@
-// made by empfaked for stresser.fun 
-process.on('uncaughtException', function(er) {
-    //console.log(er);
-});
-process.on('unhandledRejection', function(er) {
-    //console.log(er);
-});
-
-process.on("SIGHUP", () => {
-    return 1;
-  })
-process.on("SIGCHILD", () => {
-    return 1;
-  });
-
 require("events").EventEmitter.defaultMaxListeners = 0;
 process.setMaxListeners(0);
 const gradient = require('gradient-string');
